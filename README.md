@@ -8,4 +8,4 @@ Oh no!  Noah made some bugs while making this Twitter program!  Help him fix the
 
 3.  Using Vim, switch the `else if` statements for input conditions 1 and 2 without going into insert mode. (Hint: use visual mode)
 
-4. And of course, I can't spell the word "coming."  Using Vim, find and replace "comming" with "coming", while keeping your cursor o
+4. And of course, I can't spell the word "coming."  Using Vim, find and replace "comming" with "coming", while keeping your cursor on the first line.
