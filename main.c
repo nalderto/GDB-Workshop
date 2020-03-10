@@ -2,8 +2,8 @@
 
 int main(char* argv, int argc) {
     Tweet *main_tweet = malloc(sizeof(Tweet));
-    strcpy(main_tweet->body, "Hello and thank you for comming to the GDB/Vim Workshop! "
-        "We all really hope that you find to be a worthy learning experience!");
+    strcpy(main_tweet->body, "Hello and thank you for coming to the GDB/Vim Workshop! "
+        "We all really hope that you find it to be a worthy learning experience!");
     main_tweet->reply = NULL;
     printf("Welcome to bootleg Twitter!  Select one of the following options:\n");
     while (1) {
