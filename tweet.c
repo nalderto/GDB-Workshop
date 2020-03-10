@@ -4,7 +4,7 @@
 #include "tweet.h"
 
 void reply(Tweet *parent_tweet, char* body) {
-    while (parent_tweet->reply != NULL) {
+    while (parent_tweet != NULL) {
         parent_tweet = parent_tweet->reply;
     }
     Tweet *new_tweet = malloc(sizeof(Tweet));

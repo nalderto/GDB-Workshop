@@ -3,7 +3,7 @@
 int main(char* argv, int argc) {
     Tweet *main_tweet = malloc(sizeof(Tweet));
     strcpy(main_tweet->body, "Hello and thank you for comming to the GDB/Vim Workshop! "
-        "We all really hope that you find to be a worthy learning experience!");
+        "We all really hope that you find it to be a worthy learning experience!");
     main_tweet->reply = NULL;
     printf("Welcome to bootleg Twitter!  Select one of the following options:\n");
     while (1) {
@@ -14,6 +14,9 @@ int main(char* argv, int argc) {
         if (input == 0) {
             print_replies(main_tweet);
         }
+        else if (input == 2) {
+            break;
+        }
         else if (input == 1) {
             char input_tweet[TWEET_SIZE];
             printf("Input your reply tweet: ");
@@ -21,10 +24,7 @@ int main(char* argv, int argc) {
             char* pch = strtok(input_tweet, "\n");
             reply(main_tweet, pch);
         }
-        else if (input == 2) {
-            free_tweet(main_tweet);
-            break;
-        }
+
         else {
             printf("Invalid Input!\n");
         }
